@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.businessguru.businessguru.MainActivity$SettingsFragment">
+
+    <Button
+        android:id="@+id/userInfoButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="35dp"
+        android:elevation="0dp"
+        android:text="User Information"
+        android:layout_alignRight="@+id/logOutButton"
+        android:layout_alignEnd="@+id/logOutButton" />
+
+    <Button
+        android:id="@+id/dbAttButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/userInfoButton"
+        android:layout_alignStart="@+id/userInfoButton"
+        android:layout_below="@+id/userInfoButton"
+        android:layout_marginTop="47dp"
+        android:text="Database Attributes"
+        android:layout_alignRight="@+id/userInfoButton"
+        android:layout_alignEnd="@+id/userInfoButton" />
+
+    <Button
+        android:id="@+id/deviceSettingsButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/dbAttButton"
+        android:layout_alignStart="@+id/dbAttButton"
+        android:layout_below="@+id/dbAttButton"
+        android:layout_marginTop="47dp"
+        android:text="Device Settings"
+        android:layout_alignRight="@+id/logOutButton"
+        android:layout_alignEnd="@+id/logOutButton" />
+
+    <Button
+        android:id="@+id/logOutButton"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/deviceSettingsButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Log Out" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        style="@style/Widget.AppCompat.Button"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/userInfoButton"
+        android:background="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        style="@style/Widget.AppCompat.Button"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dbAttButton"
+        android:background="#FFFFFF"
+
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/Widget.AppCompat.Button"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/deviceSettingsButton"
+        android:background="#FFFFFF"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+</RelativeLayout>

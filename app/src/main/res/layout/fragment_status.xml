@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.businessguru.businessguru.MainActivity$StatusFragment">
+
+    <Switch
+        android:id="@+id/connectSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_weight="1"
+        android:checked="false"
+        android:switchPadding="20dp"
+        android:text="Connect"
+        android:textAllCaps="false"
+        android:textOff="@string/connectF"
+        android:textOn="@string/connectT"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:checked="false" />
+
+    <Switch
+        android:id="@+id/connectSwitch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:switchPadding="20dp"
+        android:text="Connect"
+        android:textAllCaps="false"
+        android:textOff="@string/connectF"
+        android:textOn="@string/connectT"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:checked="false"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/textViewConnect1"
+        android:layout_alignLeft="@+id/connectSwitch1"
+        android:layout_alignStart="@+id/connectSwitch1" />
+
+    <Switch
+        android:id="@+id/connectSwitch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:checked="false"
+        android:switchPadding="20dp"
+        android:text="Connect"
+        android:textAllCaps="false"
+        android:textOff="@string/connectF"
+        android:textOn="@string/connectT"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:checked="false"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/textViewConnect2"
+        android:layout_alignLeft="@+id/connectSwitch2"
+        android:layout_alignStart="@+id/connectSwitch2" />
+
+    <TextView
+        android:id="@+id/textViewConnect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectSwitch1"
+        android:layout_centerHorizontal="true"
+        android:text="Device 1 is not connected." />
+
+    <TextView
+        android:id="@+id/textViewConnect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectSwitch2"
+        android:layout_centerHorizontal="true"
+        android:text="Device 2 is not connected." />
+
+    <TextView
+        android:id="@+id/textViewConnect3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connectSwitch3"
+        android:layout_centerHorizontal="true"
+        android:text="Device 3 is not connected." />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/connectContainer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
+
+
+</RelativeLayout>
